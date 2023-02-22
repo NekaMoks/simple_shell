@@ -17,7 +17,7 @@ int print_alias(data_of_program *data, char *alias)
 		for (i = 0; data->alias_list[i]; i++)
 		{
 			if (!alias || (str_compare(data->alias_list[i], alias, alias_length)
-						&&	data->alias_list[i][alias_length] == '='))
+				&&	data->alias_list[i][alias_length] == '='))
 			{
 				for (j = 0; data->alias_list[i][j]; j++)
 				{
@@ -55,7 +55,7 @@ char *get_alias(data_of_program *data, char *name)
 	for (i = 0; data->alias_list[i]; i++)
 	{/* Iterates through the environ and check for coincidence of the varname */
 		if (str_compare(name, data->alias_list[i], alias_length) &&
-				data->alias_list[i][alias_length] == '=')
+			data->alias_list[i][alias_length] == '=')
 		{/* returns the value of the key NAME=  when find it */
 			return (data->alias_list[i] + alias_length + 1);
 		}
@@ -91,7 +91,7 @@ int set_alias(char *alias_string, data_of_program *data)
 	/* Iterates through the alias list and check for coincidence of the varname */
 	for (j = 0; data->alias_list[j]; j++)
 		if (str_compare(buffer, data->alias_list[j], i) &&
-				data->alias_list[j][i] == '=')
+			data->alias_list[j][i] == '=')
 		{/* if the alias alredy exist */
 			free(data->alias_list[j]);
 			break;

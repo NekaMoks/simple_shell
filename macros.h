@@ -50,7 +50,7 @@
 "	otherwise the list of help topics is printed BUILTIN_NAME list.\n"\
 "	Arguments:\n\n"\
 "	BUILTIN_NAME specifiying a help topic.\n\n"\
-"	cd\t[dir]\n
+"	cd\t[dir]\n"\
 "	exit\t[status]\n"\
 "	env\n"\
 "	setenv\t[variable value]\n"\

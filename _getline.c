@@ -15,7 +15,7 @@ int _getline(data_of_program *data)
 	/* check if doesnot exist more commands in the array */
 	/* and checks the logical operators */
 	if (!array_commands[0] || (array_operators[0] == '&' && errno != 0) ||
-			(array_operators[0] == '|' && errno == 0))
+		(array_operators[0] == '|' && errno == 0))
 	{
 		/*free the memory allocated in the array if it exists */
 		for (i = 0; array_commands[i]; i++)

@@ -20,7 +20,7 @@ int builtin_env(data_of_program *data)
 		{/* checks if exists a char = */
 			if (data->tokens[1][i] == '=')
 			{/* checks if exists a var with the same name and change its value*/
-				/* temporally */
+			/* temporally */
 				var_copy = str_duplicate(env_get_key(cpname, data));
 				if (var_copy != NULL)
 					env_set_key(cpname, data->tokens[1] + i + 1, data);

@@ -82,7 +82,7 @@ int str_compare(char *string1, char *string2, int number)
 		for (iterator = 0; iterator < number ; iterator++)
 		{
 			if (string1[iterator] != string2[iterator])
-				return (0);
+			return (0);
 		}
 		return (1);
 	}
